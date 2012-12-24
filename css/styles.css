@@ -1,0 +1,36 @@
+body {
+}
+
+.header-holder, nav {
+  display: block;
+}
+
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #dedede;
+}
+
+#header {
+}
+
+img {}
+
+img #logo {
+  float: left;
+}
+
+nav {
+  float: left;
+  font: 16px "helvetica_bold", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  list-style: none;
+  text-transform: uppercase;
+  margin: 9px 0 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+  padding: 0 20px;
+}
