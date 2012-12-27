@@ -1,36 +1,160 @@
 body {
-}
-
-.header-holder, nav {
-  display: block;
-}
-
-#wrapper {
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
+  font:   14px/130% 'Helvetica Neue' Helvetica, Arial, sans-serif ;
+}
+
+.wrapper {
+  width: 940px;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+#header-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#header-banner {
+  display: block;
+  background-color: #756B6A;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  border-bottom: 3px solid #FFab00;
+}
+
+
+#header {
+  width: 940px;
+  margin: 0 auto;
+  padding: 36px 0 0 0;
+  height: 70px;
+  border-bottom: 2px solid #ccc;
+
+
+}
+
+#logo {
+  float: left;
+  background-image: url('images/logo.jpg');
+  height: 60px;
+  width: 130px;
+  text-indent: -9999px;
+
+}
+
+
+#tagline {
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #999;
+  letter-spacing: 25px;
+  text-align: right;
+}
+
+#slide-holder {
+  width: 936px;
+  min-height: 310px;
   background-color: #dedede;
 }
 
-#header {
+/* ----------- TYPOGRAPHY ------------ */
+
+h1 h2 h3 h4 h5 {}
+
+a {
+ text-decoration: none;
+ color: #3399FF;
 }
 
-img {}
-
-img #logo {
-  float: left;
+.banner-text {
+  color: #eee;
+  padding: 5px 0;
+  font-size: 12px;
 }
 
-nav {
-  float: left;
-  font: 16px "helvetica_bold", Helvetica, Arial, sans-serif;
+.banner-text a {
+  color: #eee;
+  padding: 0 20px;
+}
+
+.banner-text a:hover {
+  text-decoration: underline;
+}
+
+.muted {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+
+/* ----------- NAVIGATION ------------ */
+
+
+.global {
+  font: 14px/16px "helvetica_bold", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  list-style: none;
+}
+
+.nav {
   text-transform: uppercase;
-  margin: 9px 0 0;
+  list-style: none;
+  margin: 5px 0;
   padding: 0;
 }
 
-nav li {
+.nav li {
   float: left;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 20px 20px 20px 20px;
 }
+
+.nav li:last-child {
+  padding-right: 0px;
+}
+
+.nav li a {
+  color: #003366;
+}
+
+.nav li a:hover {
+  color: #3399FF;
+}
+
+.rule {
+  clear: both;
+  padding: 4px 0 6px 0;
+}
+.rule.top {
+  border-top: 2px solid #ccc;
+}
+.rule.bottom {
+  border-bottom: 2px solid #ccc;
+}
+.rule.right {
+  border-right: 2px solid #ccc;
+}
+.rule.left {
+  border-left: 2px solid #ccc;
+}
+
+.pull-right {
+  float: right;
+}
+
+/* ----------- GRID LAYOUT ------------ */
+
+.span-full {
+  width: 940px;
+  margin: 0 auto;
+}
+
+  .span-1 {
+    width: 60px;
+
+  }
